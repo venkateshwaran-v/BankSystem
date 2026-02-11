@@ -41,10 +41,9 @@ public class UserService {
     }
 
     public User getUserById(int id) throws UserNotFoundException {
-        User user = users.get(id);
-        if (user == null)
+        if (!users.containsKey(id))
             throw new UserNotFoundException("User with id: " + id +" not found");
-        return user;
+        return users.get(id);
     }
 
 }
