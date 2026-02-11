@@ -1,6 +1,6 @@
 package com.venkatesh.bank.model;
 
-class Account {
+public class Account {
     private int accountNumber;
     private int userId;
     private double balance;

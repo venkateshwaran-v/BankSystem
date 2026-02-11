@@ -2,7 +2,13 @@ package com.venkatesh.bank.model;
 
 import java.time.LocalDateTime;
 
-class Transaction {
+enum TransactionType {
+    DEPOSIT,
+    WITHDRAW,
+    TRANSFER
+}
+
+public class Transaction {
     private long transactionId;
     private int fromAccount;
     private int toAccount;
